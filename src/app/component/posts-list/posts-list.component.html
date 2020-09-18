@@ -1,9 +1,11 @@
 <div *ngFor="let post of posts">
-  <h2>
+  <p class="font-weight-bold text-uppercase text-center">
     {{ post.title }}
-  </h2>
-  <small>id: {{ post.id }}, userId: {{ post.userId }}</small>
-  <p>
+  </p>
+  <p class="text-right">
+    id: {{ post.id }}, userId: {{ post.userId }}
+  </p>
+  <p class="text-capitalize font-italic text-danger">
     {{post.body}}
   </p>
 </div>
